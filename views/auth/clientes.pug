@@ -1,0 +1,21 @@
+extends ../layout/index
+
+block formulario
+  div(class='container')
+    div(class='jolydins')
+      img(src="../img/Logo.png", alt="img")
+      span(class='options') 
+        a(href="/auth/cliente") clientes
+      span(class='options') 
+        a(href="/auth/producto") productos
+      span DERECHOS RESERVADOS JAIME ZAPATA
+    div(class='formulario')
+      div(class='formulario-card')
+        form(action="/auth/cliente" method='POST' class='formulariouser')
+          input(class='form-item' id="nombre" name="nombre" placeholder="Nombre" type="text" value= cliente ? cliente.nombre : '')
+          input(class='form-item' id="apellido" name="apellido" placeholder="Apellido" type="text" value= cliente ? cliente.apellido : '')
+          input(class='form-item' id="documento" name="documento" placeholder="Documento" type="number" value= cliente ? cliente.documento  : '')
+          input(class='form-item' id="correo" name="correo" placeholder="Correo" type="email" value= cliente ? cliente.correo : '')
+          input(class='form-item' id="direccion" name="direccion" placeholder="Direccion" type="text" value= cliente ? cliente.direccion  : '')
+          input(class='form-item' id="telefono" name="telefono" placeholder="Telefono" type="text" value= cliente ? cliente.telefono  : '')
+          input(class='btnGuardar' id="btnGuardar" value="Crear Cliente" type="submit")

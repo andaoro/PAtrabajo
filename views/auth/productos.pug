@@ -1,0 +1,20 @@
+extends ../layout/index
+
+block formulario
+  div(class='container')
+    div(class='jolydins')
+      img(src="../img/Logo.png", alt="img")
+      span(class='options') 
+        a(href="/auth/cliente") clientes
+      span(class='options') 
+        a(href="/auth/producto") productos
+      span DERECHOS RESERVADOS JAIME ZAPATA
+    div(class='formulario')
+      div(class='formulario-card')
+        form(action="/auth/producto" method='POST' class='formulariouser')
+          input(class='form-item' id="nombre" name="nombre" placeholder="Nombre" type="text" value= producto ? producto.nombre : '')
+          input(class='form-item' id="precio" name="precio" placeholder="Precio" type="text" value= producto ? producto.precio  : '')
+          input(class='form-item' id="referencia" name="referencia" placeholder="Referencia" type="text" value= producto ? producto.referencia   : '')
+          input(class='form-item' id="cantidad" name="cantidad" placeholder="Cantidad" type="number" value= producto ? producto.cantidad  : '')
+          input(class='form-item' id="descripcion" name="descripcion" placeholder="Descripcion" type="text" value= producto ? producto.descripcion  : '')
+          input(class='btnGuardar' id="btnGuardar" value="Agregar Producto" type="submit")

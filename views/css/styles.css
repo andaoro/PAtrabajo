@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    left: 0;
+    top: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.jolydins{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 300px;
+    background-color: #562B08;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #82CD47;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #82CD47;
+    width: 1250px;
+}
+.formulario-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #562B08;
+    border: 1px solid black;
+    width: 500px;
+    height: 600px;
+}
+.formulariouser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    margin: 1rem 0rem;
+    padding: 0.625rem 0rem;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #82CD47;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+input::placeholder{
+    color: #fff;
+}
+
+.btnGuardar{
+    border: 1px solid #82CD47;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
